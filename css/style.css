@@ -13,26 +13,33 @@ Also hides overflow.
     font-size: 16px;
     margin: 64px;
     border-radius: 8px;
+
 }
 
 body {
     background-color: #01215f;
     color: #96D5CF;
 
+    border-radius: clamp(0.95rem, 1.15rem, 1.25rem);
+    margin: clamp(1rem, 2rem, 3rem);
+
     font-size: clamp(4.5rem, 12.5rem, 12.5rem);
     font-style: normal;
     font-weight: normal;
+
     font-family: Maven Pro, Helvetica, sans-serif;
 }
 
-.bg {
+div {
     background-color: #96D5CF;
+    color: #01215f;
+
     border-radius: clamp(0.95rem, 1.15rem, 1.25rem);
+    padding: clamp(1rem, 2rem, 5rem);
+
     font-size: clamp(1rem, 1.5rem, 2rem);
-    margin: clamp(0.5rem, 1rem, 1.5rem);
 }
 
-header {
-    color: #01215f;
-    font-size: clamp(1rem, 2rem, 3rem);
-}
+h1 {}
+
+section {}
