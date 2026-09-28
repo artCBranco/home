@@ -7,13 +7,14 @@ using the CSS Grid.
 
 Also hides overflow.
 
+Font styles: ExtraLight, Light, Medium, Bold, ExtraBold,Black +Italic
+
 **********************************************/
 
 :root {
     font-size: 16px;
     margin: 64px;
     border-radius: 8px;
-
 }
 
 body {
@@ -21,21 +22,47 @@ body {
     color: #96D5CF;
 
     border-radius: clamp(0.95rem, 1.15rem, 1.25rem);
-    margin: clamp(1rem, 2rem, 3rem);
+    margin: clamp(1rem, 3rem, 3rem);
 
     font-size: clamp(4.5rem, 12.5rem, 12.5rem);
     font-style: normal;
     font-weight: normal;
+    font-display: fallback;
 
-    font-family: Maven Pro, Helvetica, sans-serif;
+    font-family: Poppins, Arial, sans-serif;
+    src: local('Poppins'),
+        url ('Poppins.ttf') format('ttf'),
+
+
 }
 
 div {
     background-color: #96D5CF;
     color: #01215f;
 
+
+
     border-radius: clamp(0.95rem, 1.15rem, 1.25rem);
     padding: clamp(1rem, 2rem, 5rem);
 
     font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    font-weight: lighter;
+    line-height: 90%;
+}
+
+h2 {
+    font-weight: light;
+}
+
+p {
+
+    line-height: 95%;
 }
