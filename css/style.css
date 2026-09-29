@@ -51,6 +51,8 @@ div {
 img {
     display: block;
     margin: auto;
+    width: 50%;
+    border-radius: 100%;
 }
 
 h1 {
