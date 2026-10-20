@@ -1,70 +1,133 @@
-/*********************************************
-
-Here is a description of any special CSS used.
-In this case it's just padding and margin to 0
-and then centring the canvas (and anything else)
-using the CSS Grid.
-
-Also hides overflow.
-
-Font styles: ExtraLight, Light, Medium, Bold, ExtraBold,Black +Italic
-
-**********************************************/
-
-:root {
-    font-size: 16px;
-    margin: 64px;
-    border-radius: 8px;
-}
+/*************************** 
+CSS document for this project
+**************************/
 
 body {
-    background-color: #01215f;
-    color: #96D5CF;
+    /*styling the colors of the website*/
+    background-color: rgb(28, 28, 28);
+    color: white;
 
-    border-radius: clamp(0.95rem, 1.15rem, 1.25rem);
-    margin: clamp(1rem, 3rem, 3rem);
-
-    font-size: clamp(4.5rem, 12.5rem, 12.5rem);
-    font-style: normal;
+    /*styling the font*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8em;
     font-weight: normal;
     font-display: fallback;
+    margin: 0%;
+    padding: 0%;
+}
 
-    font-family: Poppins, Arial, sans-serif;
-    src: local('Poppins'),
-        url ('Poppins.ttf') format('ttf'),
-
+/* Hyperlinks*/
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+    line-height: 5rem;
 
 }
 
-div {
-    background-color: #96D5CF;
-    color: #01215f;
+/* Navigation Menu settings, includes hyperlinks*/
+nav {
+    margin-top: 20%;
+    margin-left: 3%;
+    float: left;
+    width: 20%;
 
-
-
-    border-radius: clamp(0.95rem, 1.15rem, 1.25rem);
-    padding: clamp(1rem, 2rem, 5rem);
-
-    font-size: clamp(1rem, 1.5rem, 2rem);
 }
 
+/* Hover effect */
+nav a:hover {
+    color: aquamarine
+}
+
+.wrapper {
+    float: right;
+    width: 60%;
+}
+
+/*Image width*/
 img {
-    display: block;
-    margin: auto;
-    width: 50%;
-    border-radius: 100%;
+    width: 95%;
+    height: auto;
+    border-radius: .5rem;
 }
 
-h1 {
-    font-weight: lighter;
-    line-height: 90%;
+/* settings to create the grid*/
+.bookgrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 
-h2 {
-    font-weight: light;
+.list {
+    display: list-item
 }
 
-p {
+/*Bibliography settings*/
+.ref {
+    font-size: .8em;
+    line-height: .6em;
+    font-weight: 100;
+}
 
-    line-height: 95%;
+footer {
+    font-size: .8em;
+    line-height: 1em;
+}
+
+/* margin to all sections*/
+section {
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+@media (max-width:767px) {
+
+    body {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        font-size: 0.75em;
+        line-height: 0.5rem;
+
+    }
+
+
+    nav a:hover {
+        color: blue;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    nav {
+        background-color: white;
+        float: none;
+        width: 100%;
+        height: 10%;
+        margin: 0 auto;
+        min-height: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .wrapper {
+        float: none;
+        width: 80%;
+        margin: 5% auto 0%;
+
+    }
+
+    /* settings to create the grid*/
+    .bookgrid {
+        max-width: 100%;
+        grid-template-columns: auto auto;
+    }
 }
