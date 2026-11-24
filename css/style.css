@@ -32,7 +32,7 @@ nav {
     margin-left: 3%;
     float: left;
     width: 20%;
-
+    display: inline-block;
 }
 
 /* Hover effect */
